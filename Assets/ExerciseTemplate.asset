@@ -1,0 +1,1318 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292b455fd5e5bd24e9930e11d70bb9a2, type: 3}
+  m_Name: ExerciseTemplate
+  m_EditorClassIdentifier: 
+  dataquiz:
+    identifications:
+      easy:
+      - description: 'Identify the noun in this sentence: "I bought a new car yesterday."'
+        topic: 0
+        rightAnswer: Car
+        Explanation: ' The noun in this sentence is "car," representing the object
+          that was purchased.
+
+'
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Find the noun: "The teacher explained the lesson with clarity."'
+        topic: 0
+        rightAnswer: Teacher
+        Explanation: he noun in this sentence is "teacher" as it refers to the person
+          performing the action of explaining.
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Locate the noun in this sentence: "The book on the shelf caught
+          my attention."'
+        topic: 0
+        rightAnswer: ' Book'
+        Explanation: 'Explanation: The noun in this sentence is "book," referring
+          to the object on the shelf.'
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Locate the noun in this sentence: "His laughter echoed through
+          the room."'
+        topic: 0
+        rightAnswer: Laughter
+        Explanation: 'The noun in this sentence is "laughter," representing the sound
+          that echoed.
+
+'
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Identify the noun in the sentence: "The cat chased the mouse."'
+        topic: 0
+        rightAnswer: Cat
+        Explanation: The noun in this sentence is "cat" as it is the subject performing
+          the action.
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Find the noun in this sentence: "She baked a delicious cake
+          for the celebration."'
+        topic: 0
+        rightAnswer: Cake
+        Explanation: 'The noun in this sentence is "cake," which is the object receiving
+          the action of baking.
+
+'
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Identify the noun: "We enjoyed the concert last night."'
+        topic: 0
+        rightAnswer: Concert
+        Explanation: The noun in this sentence is "concert," representing the event
+          that was enjoyed.
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Locate the noun in the sentence: "The sun set behind the mountains."'
+        topic: 0
+        rightAnswer: Sun
+        Explanation: 'The noun in this sentence is "sun" as it is the subject of
+          the action, setting.
+
+'
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Find the noun in this sentence: "The river flowed gently beside
+          the old mill."'
+        topic: 0
+        rightAnswer: River
+        Explanation: The noun in this sentence is "river," representing the flowing
+          body of water.
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Identify the noun: "She wore a beautiful dress to the party."'
+        topic: 0
+        rightAnswer: Dress
+        Explanation: The noun in this sentence is "dress," referring to the clothing
+          worn to the party.
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      medium:
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      hard:
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        topic: 0
+        rightAnswer: 
+        Explanation: 
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+    MultipleChoices:
+      easy:
+      - description: 'Which word is a noun in this sentence: "His *laughter* echoed
+          through the '
+        Explanation: The noun in this sentence is "laughter," representing the sound.
+        topic: 2
+        choice1: His
+        choice2: ' Echoed'
+        choice3: ' Laughter'
+        choice4: ' Room'
+        rightAns: 0
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Which word is a noun in the sentence: "The *dog* barked loudly."'
+        Explanation: The noun in this sentence is "dog," which is the subject of
+          the action.
+        topic: 0
+        choice1: The
+        choice2: Barked
+        choice3: Dog
+        choice4: Loudly
+        rightAns: 2
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Identify the noun in the sentence: "The *mountains* are majestic."'
+        Explanation: The noun in this sentence is "mountains," which is the subject.
+        topic: 0
+        choice1: The
+        choice2: Are
+        choice3: Mountains
+        choice4: Majestic
+        rightAns: 2
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: In the sentence "She wore an elegant *dress*," what is the noun?
+        Explanation: The noun in this sentence is "painting," referring to the artwork.
+        topic: 0
+        choice1: ' She'
+        choice2: Wore
+        choice3: ' Elegant'
+        choice4: Dress
+        rightAns: 3
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Find the noun in the sentence: "The *sunshine* brightened the
+          day."'
+        Explanation: The noun in this sentence is "sunshine," contributing to the
+          brightness of the day.
+        topic: 0
+        choice1: The
+        choice2: Brightened
+        choice3: Day
+        choice4: Sunshine
+        rightAns: 3
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: In the sentence "She enjoys playing the *piano*," what is the
+          noun?
+        Explanation: The noun in this sentence is "piano," representing the musical
+          instrument.
+        topic: 0
+        choice1: She
+        choice2: Enjoys
+        choice3: Playing
+        choice4: Piano
+        rightAns: 3
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Which word is a noun in this sentence: "I love reading a good
+          *book*."'
+        Explanation: 'The noun in this sentence is "book," the object of the action
+          of reading.
+
+'
+        topic: 0
+        choice1: I
+        choice2: Love
+        choice3: Reading
+        choice4: Book
+        rightAns: 3
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Identify the noun in this sentence: "The *river* flowed gracefully."'
+        Explanation: The noun in this sentence is "river," representing the flowing
+          body of water.
+        topic: 0
+        choice1: The
+        choice2: Flowed
+        choice3: Gracefully
+        choice4: River
+        rightAns: 3
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Find the noun in the sentence: "The *teacher* gave a fascinating
+          lecture."'
+        Explanation: The noun in this sentence is "laughter," representing the sound.
+        topic: 3
+        choice1: ' The'
+        choice2: Gave
+        choice3: ' Fascinating'
+        choice4: Teacher
+        rightAns: 0
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 'Which word is a noun: "We admired the beautiful *painting*."'
+        Explanation: The noun in this sentence is "teacher," who performed the action
+          of giving a lecture.
+        topic: 0
+        choice1: ' We'
+        choice2: Admired
+        choice3: Beautiful
+        choice4: Painting
+        rightAns: 3
+        author:
+          username: Game System
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      medium:
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      hard:
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
+      - description: 
+        Explanation: 
+        topic: 0
+        choice1: 
+        choice2: 
+        choice3: 
+        choice4: 
+        rightAns: 0
+        author:
+          username: 
+          teacher: 0
+          teacherPassword: 
+          score:
+            easyRight: 0
+            mediumRight: 0
+            hardRight: 0
+            easyWrong: 0
+            mediumWrong: 0
+            hardWrong: 0
+            PluralWrong: 0
+            phrasesWrong: 0
+            idiomWrong: 0
+          excerciseDone: 0
