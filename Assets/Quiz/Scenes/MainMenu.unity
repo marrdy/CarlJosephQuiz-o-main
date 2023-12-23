@@ -1148,22 +1148,10 @@ MonoBehaviour:
           m_StringArgument: pop
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 545941402}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 545941402}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1482597949}
+        m_TargetAssemblyTypeName: IdentificationQuizScript, Assembly-CSharp
+        m_MethodName: closeQuiz
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1790,7 +1778,7 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Average
       m_Image: {fileID: 0}
-    - m_Text: Difficulty
+    - m_Text: Hard
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3964,22 +3952,10 @@ MonoBehaviour:
           m_StringArgument: pop
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 545941402}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 545941402}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1482597949}
+        m_TargetAssemblyTypeName: IdentificationQuizScript, Assembly-CSharp
+        m_MethodName: closeQuiz
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4981,6 +4957,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1482597949}
+        m_TargetAssemblyTypeName: IdentificationQuizScript, Assembly-CSharp
+        m_MethodName: closing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 883837416}
         m_TargetAssemblyTypeName: SMScript, Assembly-CSharp
         m_MethodName: playtrack
@@ -4992,30 +4980,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: pop
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 545941402}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 545941402}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &298594823
 MonoBehaviour:
@@ -5470,7 +5434,7 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Average
       m_Image: {fileID: 0}
-    - m_Text: Difficulty
+    - m_Text: Hard
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6738,8 +6702,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -40.355}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 34.33, y: 37.2}
-  m_SizeDelta: {x: 68.6606, y: 14.182}
+  m_AnchoredPosition: {x: 54.006, y: 48}
+  m_SizeDelta: {x: 108.0116, y: 21.0333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &396733654
 MonoBehaviour:
@@ -10318,6 +10282,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 223555507004969939, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223555507004969939, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223555507004969939, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223555507004969939, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223555507004969939, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226798790034702168, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226798790034702168, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226798790034702168, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226798790034702168, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226798790034702168, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 377460483208872574, guid: 00178bed8f7d0694d8f7617dedb57b8a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -10382,6 +10396,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370849524565015592, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_Padding.m_Bottom
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435415169125488088, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435415169125488088, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435415169125488088, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435415169125488088, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435415169125488088, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135889824260030675, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135889824260030675, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135889824260030675, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135889824260030675, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135889824260030675, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3364322338763093893, guid: 00178bed8f7d0694d8f7617dedb57b8a,
         type: 3}
@@ -10572,6 +10641,73 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AddUser
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603264129391870199, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603264129391870199, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603264129391870199, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603264129391870199, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956535411117678425, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956535411117678425, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956535411117678425, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442822891786102067, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: c64d66155a21a9740ad972586a4586b1,
+        type: 2}
+    - target: {fileID: 8442822891786102067, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 240830646326108962, guid: c64d66155a21a9740ad972586a4586b1,
+        type: 2}
+    - target: {fileID: 8750240444672629593, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750240444672629593, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750240444672629593, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750240444672629593, guid: 00178bed8f7d0694d8f7617dedb57b8a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00178bed8f7d0694d8f7617dedb57b8a, type: 3}
@@ -11324,7 +11460,7 @@ GameObject:
   - component: {fileID: 693480382}
   - component: {fileID: 693480381}
   m_Layer: 5
-  m_Name: home
+  m_Name: quiz(multiple Choice)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14622,22 +14758,10 @@ MonoBehaviour:
           m_StringArgument: pop
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 545941402}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 545941402}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1482597950}
+        m_TargetAssemblyTypeName: MultipleChoiceQuiz, Assembly-CSharp
+        m_MethodName: closing
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14724,7 +14848,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 151, y: -64}
+  m_AnchoredPosition: {x: 90, y: -80.9161}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &888739820
@@ -16240,22 +16364,10 @@ MonoBehaviour:
           m_StringArgument: pop
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 545941402}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 545941402}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1482597950}
+        m_TargetAssemblyTypeName: MultipleChoiceQuiz, Assembly-CSharp
+        m_MethodName: closing
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18651,6 +18763,18 @@ MonoBehaviour:
           m_StringArgument: pop
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1482597950}
+        m_TargetAssemblyTypeName: MultipleChoiceQuiz, Assembly-CSharp
+        m_MethodName: closing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1153681539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19323,7 +19447,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.65
+  m_fontSize: 18.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -29987,30 +30111,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: pop
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1482597950}
-        m_TargetAssemblyTypeName: MultipleChoiceQuiz, Assembly-CSharp
-        m_MethodName: startGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1482597950}
-        m_TargetAssemblyTypeName: MultipleChoiceQuiz, Assembly-CSharp
-        m_MethodName: startGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1912810840

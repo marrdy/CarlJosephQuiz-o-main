@@ -15,11 +15,14 @@ public class MultipleChoiceEditBox : MonoBehaviour
     public TMP_InputField c;
     public TMP_InputField d;
     public GameObject YesNoDialog;
-    public TMP_Dropdown difficulty;
+    public int difficulty;
     public TMP_Dropdown rightchoice;
     public TMP_Dropdown topic;
     public QuizManager qm;
     public int index;
+    public TMP_Text textdiff;
+    public PromptMessageScript msg;
+    
     public void setValue(MultipleChoice setmc, int diff)
     {
         descripting.text = setmc.description;
@@ -31,7 +34,18 @@ public class MultipleChoiceEditBox : MonoBehaviour
         explain.text = setmc.Explanation;
         author = setmc.author;
         rightchoice.value = setmc.rightAns;
-        difficulty.value = diff;
+        switch (diff)
+        {
+            case 0:
+                textdiff.text = "Easy";
+                break;
+            case 1:
+                textdiff.text = "Average";
+                break;
+            case 2:
+                textdiff.text = "Hard";
+                break;
+        }
     }
     public void save()
     {
@@ -50,7 +64,7 @@ public class MultipleChoiceEditBox : MonoBehaviour
         }
         catch (Exception)
         {
-            switch (difficulty.value)
+            switch (difficulty)
             {
                 case 0:
                     qm.SetOfQuiz.MultipleChoices.easy = RemoveAtIndex(new List<MultipleChoice>(qm.SetOfQuiz.MultipleChoices.easy), index);
@@ -64,7 +78,7 @@ public class MultipleChoiceEditBox : MonoBehaviour
             }
         }
 
-        switch (difficulty.value)
+        switch (difficulty)
         {
             case 0:
                 qm.SetOfQuiz.MultipleChoices.easy[index] = mc;
@@ -78,6 +92,9 @@ public class MultipleChoiceEditBox : MonoBehaviour
         }
 
         DataSaver.SaveQuiz(qm.SetOfQuiz);
+        GameObject msgprmt = Instantiate(msg.gameObject);
+        msgprmt.GetComponent<PromptMessageScript>().message.text = "Quiz Saved successfully";
+
     }
     public void delete()
     {
@@ -106,7 +123,7 @@ public class MultipleChoiceEditBox : MonoBehaviour
     }
     private void RemoveQuestionAtIndex()
     {
-        switch (difficulty.value)
+        switch (difficulty)
         {
             case 0:
                 qm.SetOfQuiz.MultipleChoices.easy = RemoveAtIndex(new List<MultipleChoice>(qm.SetOfQuiz.MultipleChoices.easy), index);
@@ -120,7 +137,10 @@ public class MultipleChoiceEditBox : MonoBehaviour
         }
 
         DataSaver.SaveQuiz(qm.SetOfQuiz);
+        GameObject msgprmt = Instantiate(msg.gameObject);
+        msgprmt.GetComponent<PromptMessageScript>().message.text = "Quiz deleted successfully";
         Destroy(gameObject);
+  
     }
     private MultipleChoice[] RemoveAtIndex(List<MultipleChoice> list, int index)
     {

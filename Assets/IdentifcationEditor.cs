@@ -18,7 +18,7 @@ public class IdentifcationEditor : MonoBehaviour
             Destroy(child.gameObject);
         }
         
-        // qm.SetOfQuiz = DataSaver.LoadQuiz(qm.SetOfQuiz);
+         qm.SetOfQuiz = DataSaver.LoadQuiz(qm.SetOfQuiz);
        
 
         Identification[] easy = qm.SetOfQuiz.identifications.easy;

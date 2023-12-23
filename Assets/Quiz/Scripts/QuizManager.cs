@@ -12,11 +12,16 @@ public class QuizManager : MonoBehaviour
     public quizes SetOfQuiz;
     public BoxedMessage message;
     public PanelManager pm;
+    private void Start()
+    {
+        SetOfQuiz = DataSaver.LoadQuiz(SetOfQuiz);
+    }
     public void loadQuizes(bool exercise)
     {
         cc.exercise = exercise;
         if (!exercise)
         {
+            
             SetOfQuiz = DataSaver.LoadQuiz(SetOfQuiz);
            
             Debug.Log("Quiz Mode");
@@ -30,7 +35,7 @@ public class QuizManager : MonoBehaviour
         }
         try 
         {
-            if (AreArraysEnough(SetOfQuiz.identifications) && AreArraysEnough(SetOfQuiz.MultipleChoices))
+            if (AreArraysEnough(SetOfQuiz.identifications,1) && AreArraysEnough(SetOfQuiz.MultipleChoices,1))
             {
                 pm.ChangeSection(2);
                
@@ -51,15 +56,15 @@ public class QuizManager : MonoBehaviour
     }
 
     // Helper method to check if an array is empty
-    private bool AreArraysEnough(DifficultyIdentification arrays)
+    private bool AreArraysEnough(DifficultyIdentification arrays, int range)
     {
-        return arrays.easy.Length >= 10 && arrays.medium.Length >= 10 && arrays.hard.Length >= 10;
+        return arrays.easy.Length >= range && arrays.medium.Length >= range && arrays.hard.Length >= range;
     }
 
     // Helper method to check if an array is empty
-    private bool AreArraysEnough(DifficultyMultiple arrays)
+    private bool AreArraysEnough(DifficultyMultiple arrays, int range)
     {
-        return arrays.easy.Length >= 10 && arrays.medium.Length >= 10 && arrays.hard.Length >= 10;
+        return arrays.easy.Length >= range && arrays.medium.Length >= range && arrays.hard.Length >= range;
     }
 
 

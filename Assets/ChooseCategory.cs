@@ -29,6 +29,10 @@ public class ChooseCategory : MonoBehaviour
                     id = qm.SetOfQuiz.identifications.hard;
                     break;
             }
+            mcExercises.exerciseMode = false;
+            identexecercise.startGame();
+            pm.ChangeSection(7);
+          
         }
         else 
         {
@@ -44,6 +48,9 @@ public class ChooseCategory : MonoBehaviour
                     mc = qm.SetOfQuiz.MultipleChoices.hard;
                     break;
             }
+            mcExercises.exerciseMode = false;
+            mcExercises.startGame();
+            pm.ChangeSection(8);
             
         }
         

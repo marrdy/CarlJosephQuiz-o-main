@@ -1481,10 +1481,14 @@ MonoBehaviour:
       PluralWrong: 0
       phrasesWrong: 0
       idiomWrong: 0
+    excerciseDone: 0
   username: {fileID: 5771337663620843691}
   UserType: {fileID: 6986932813376261563}
   pword: {fileID: 1127220305949006176}
   UM: {fileID: 0}
+  scrollrec: {fileID: 3125673396265997833}
+  submit: {fileID: 3364322339307221694}
+  agree: {fileID: 377460483208872574}
 --- !u!1 &3489558981918770818
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,10 +2843,14 @@ MonoBehaviour:
       PluralWrong: 0
       phrasesWrong: 0
       idiomWrong: 0
+    excerciseDone: 0
   username: {fileID: 5771337663620843691}
   UserType: {fileID: 6986932813376261563}
   pword: {fileID: 1127220305949006176}
   UM: {fileID: 0}
+  scrollrec: {fileID: 0}
+  submit: {fileID: 0}
+  agree: {fileID: 0}
 --- !u!1 &6919909777743939571
 GameObject:
   m_ObjectHideFlags: 0

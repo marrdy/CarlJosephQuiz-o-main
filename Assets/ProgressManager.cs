@@ -37,13 +37,13 @@ public class ProgressManager : MonoBehaviour
         ratings.meduim.text = rateMed.ToString("0") + "%";
         ratings.hard.text = rateHard.ToString("0") + "%";
         // difficulty corrects
-        correct.easy.text = easycorrect.ToString("0");
-        correct.meduim.text = medcorrect.ToString("0");
-        correct.hard.text = hardcorrect.ToString("0");
+        correct.easy.text = easycorrect.ToString("0") + "";
+        correct.meduim.text = medcorrect.ToString("0") + "";
+        correct.hard.text = hardcorrect.ToString("0") + "";
         //difficulty wrongs
-        wrong.easy.text = easywrong.ToString("0");
-        wrong.meduim.text = medwrong.ToString("0");
-        wrong.hard.text = hardwrong.ToString("0");
+        wrong.easy.text = easywrong.ToString("0") + "";
+        wrong.meduim.text = medwrong.ToString("0") + "";
+        wrong.hard.text = hardwrong.ToString("0") + "";
 
     }
     public void deletedata() 

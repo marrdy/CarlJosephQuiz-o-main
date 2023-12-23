@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+
 public class AddDialogScript : MonoBehaviour
 {
 
@@ -10,6 +12,8 @@ public class AddDialogScript : MonoBehaviour
     [SerializeField] TMP_Dropdown UserType;
     [SerializeField] TMP_InputField pword;
     [SerializeField] UserManager UM;
+    [SerializeField] ScrollRect scrollrec;
+    public Button submit, agree;
     private void Awake()
     {
         while (UM == null)
@@ -41,5 +45,12 @@ public class AddDialogScript : MonoBehaviour
         pword.text = "";
         NewUser =new();
        
+    }
+    private void OnDisable()
+    {
+        
+        submit.gameObject.SetActive(false);
+        agree.gameObject.SetActive(true);
+        scrollrec.verticalNormalizedPosition = 1f;
     }
 }

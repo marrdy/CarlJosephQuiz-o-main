@@ -62,16 +62,16 @@ public class IdentificationQuizScript : MonoBehaviour
     public void startGame() 
     {
         identifications = CC.id;
-        GameObject msg;
+       // GameObject msg;
         if (CC.gamemode == 0)
         {
             identifications = ShuffleArray(CC.id);
-            if (identifications.Length <= 9)
-            {
-                message.Message.text = "The Quiz is not yet available, please wait for teachers to submit their Quizes";
-                msg = Instantiate(message.gameObject);
-                return;
-            }
+            //if (identifications.Length <= 9)
+            //{
+            //    message.Message.text = "The Quiz is not yet available, please wait for teachers to submit their Quizes";
+            //    msg = Instantiate(message.gameObject);
+            //    return;
+            //}
             identifications = ShuffleArray(CC.id);
             currentTime = StartingTime;
             GameRuning = true;
@@ -83,6 +83,7 @@ public class IdentificationQuizScript : MonoBehaviour
     }
     public void NextQuestion() 
     {
+        GameRuning = true;
         currentQuestionIndex++;
         if(currentQuestionIndex >= identifications.Length) 
         {
@@ -101,7 +102,7 @@ public class IdentificationQuizScript : MonoBehaviour
         {
             QuestionDisplay.text = identifications[index].description;
             explainDisplay.text = identifications[index].Explanation;
-           totalQuizes.text = index + "/10";
+           totalQuizes.text = index + "/" + identifications.Length;
             authorName.text = identifications[index].author.username;
         }
         catch (Exception) 
@@ -129,10 +130,10 @@ public class IdentificationQuizScript : MonoBehaviour
                     }
                     else 
                     {
-                        passedExe.SetActive(true);
+                        failedExe.SetActive(true);
                     }
                    
-                    gotScore.text = accumelatedScore + "/10";
+                    gotScore.text = accumelatedScore + "/" + identifications.Length;
                     pm.setProgress();
                 }
                 else 
@@ -142,7 +143,7 @@ public class IdentificationQuizScript : MonoBehaviour
                     DataSaver.SaveUserInfo(um.listofUsers);
                     GameRuning = false;
                     gameoverPanel.SetActive(true);
-                    gotScore.text = accumelatedScore + "/10";
+                    gotScore.text = accumelatedScore + "/"+identifications.Length;
                     pm.setProgress();
                     return;
                 }
@@ -153,6 +154,7 @@ public class IdentificationQuizScript : MonoBehaviour
     }
     public void closeQuiz() 
     {
+        accumelatedScore = 0;
         gameoverPanel.SetActive(false);
         passedExe.SetActive(false);
         failedExe.SetActive(false);
@@ -160,52 +162,66 @@ public class IdentificationQuizScript : MonoBehaviour
     }
     public void SubmitAnswer() 
     {
-        if(answerField.text == identifications[currentQuestionIndex].rightAnswer) 
+        if (!GameRuning) return;
+        GameRuning = false;
+        if (answerField.text == identifications[currentQuestionIndex].rightAnswer) 
         {
             FindAnyObjectByType<SMScript>().playtrack("right");
             InputAnswerText.color = RightColor;
-            switch (CC.difflvl) 
+            accumelatedScore++;
+            if (!exerciseMode) 
             {
-                case 0:
-                    um.activeUser.score.easyRight++;
-                    break;
-                case 1:
-                    um.activeUser.score.mediumRight++;
-                    break;
-                case 2:
-                    um.activeUser.score.hardRight++;
-                    break;
+                // record the score if it is not exercise mode
+                switch (CC.difflvl)
+                {
+                    case 0:
+                        um.activeUser.score.easyRight++;
+                        break;
+                    case 1:
+                        um.activeUser.score.mediumRight++;
+                        break;
+                    case 2:
+                        um.activeUser.score.hardRight++;
+                        break;
+                }
             }
+            
         }
         else 
         {
             FindAnyObjectByType<SMScript>().playtrack("wrong");
             InputAnswerText.color = WrongColor;
-            switch (CC.difflvl)
+            // record the wrong if it is not exercise mode
+            if (!exerciseMode) 
             {
-                case 0:
-                    um.activeUser.score.easyWrong++;
-                    break;
-                case 1:
-                    um.activeUser.score.mediumWrong++;
-                    break;
-                case 2:
-                    um.activeUser.score.hardWrong++;
-                    break;
+                switch (CC.difflvl)
+                {
+                    case 0:
+                        um.activeUser.score.easyWrong++;
+                        break;
+                    case 1:
+                        um.activeUser.score.mediumWrong++;
+                        break;
+                    case 2:
+                        um.activeUser.score.hardWrong++;
+                        break;
+                }
+                switch (identifications[currentQuestionIndex].topic)
+                {
+                    case 0:
+                        um.activeUser.score.phrasesWrong++;
+                        break;
+                    case 1:
+                        um.activeUser.score.PluralWrong++;
+                        break;
+                    case 2:
+                        um.activeUser.score.idiomWrong++;
+                        break;
+                }
             }
-            switch (identifications[currentQuestionIndex].topic) 
-            {
-                case 0:
-                    um.activeUser.score.phrasesWrong++;
-                    break;
-                case 1:
-                    um.activeUser.score.PluralWrong++;
-                    break;
-                case 2:
-                    um.activeUser.score.idiomWrong++;
-                    break;
-            }
+
         }
+           
         NextTab.SetActive(true);
     }
     public T[] ShuffleArray<T>(T[] array)
@@ -225,7 +241,7 @@ public class IdentificationQuizScript : MonoBehaviour
 
         return array;
     }
-    private void OnDisable()
+    public void closing()
     {
         gameEnd();
         closeQuiz();

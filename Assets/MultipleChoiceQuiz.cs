@@ -66,16 +66,16 @@ public class MultipleChoiceQuiz : MonoBehaviour
     public void startGame()
     {
         multiolechoice = CC.mc;
-        GameObject msg;
+      //  GameObject msg;
         if (CC.gamemode == 1)
         {
             multiolechoice = ShuffleArray(CC.mc);
-            if (multiolechoice.Length <=9) 
-            {
-                message.Message.text = "The Quiz is not yet available, please wait for teachers to submit their Quizes";
-                msg = Instantiate(message.gameObject);
-                return;
-            }
+            //if (multiolechoice.Length <=9) 
+            //{
+            //    message.Message.text = "The Quiz is not yet available, please wait for teachers to submit their Quizes";
+            //    msg = Instantiate(message.gameObject);
+            //    return;
+            //}
             currentTime = StartingTime;
             GameRuning = true;
             PM.ChangeSection(CC.gamemode == 0 ? 7 : 8);
@@ -86,6 +86,7 @@ public class MultipleChoiceQuiz : MonoBehaviour
     }
     public void NextQuestion()
     {
+        GameRuning = true;
         currentQuestionIndex++;
         a.color = Color.white;
         b.color = Color.white;
@@ -113,7 +114,7 @@ public class MultipleChoiceQuiz : MonoBehaviour
             b.text = multiolechoice[index].choice2;
             c.text = multiolechoice[index].choice3;
             d.text = multiolechoice[index].choice4;
-            totalQuizes.text = index + "/10";
+            totalQuizes.text = index + "/" + multiolechoice.Length;
             authorName.text = multiolechoice[index].author.username;
         }
         catch (Exception)
@@ -133,6 +134,7 @@ public class MultipleChoiceQuiz : MonoBehaviour
                 if (!i.excerciseDone)
                 {
                     i.excerciseDone = accumelatedScore >= 5;
+                    i.score = um.activeUser.score;
                     DataSaver.SaveUserInfo(um.listofUsers);
                     GameRuning = false;
                     if (accumelatedScore >= 5)
@@ -142,10 +144,10 @@ public class MultipleChoiceQuiz : MonoBehaviour
                     }
                     else
                     {
-                        passedExe.SetActive(true);
+                        failedExe.SetActive(true);
                     }
 
-                    gotScore.text = accumelatedScore + "/10";
+                    gotScore.text = accumelatedScore + "/" + multiolechoice.Length;
                     pm.setProgress();
                 }
                 else
@@ -164,11 +166,11 @@ public class MultipleChoiceQuiz : MonoBehaviour
                     }
                     
                     
-                    i.score = um.activeUser.score;
-                    DataSaver.SaveUserInfo(um.listofUsers);
+                    
+                    
                     GameRuning = false;
                     gameoverPanel.SetActive(true);
-                    gotScore.text = accumelatedScore + "/10";
+                    gotScore.text = accumelatedScore + "/"+multiolechoice.Length;
                     pm.setProgress();
                     return;
                 }
@@ -179,6 +181,7 @@ public class MultipleChoiceQuiz : MonoBehaviour
     }
     public void closeQuiz()
     {
+        accumelatedScore = 0;
         gameoverPanel.SetActive(false);
         passedExe.SetActive(false);
         failedExe.SetActive(false);
@@ -186,6 +189,8 @@ public class MultipleChoiceQuiz : MonoBehaviour
     }
     public void SubmitAnswer(int ans)
     {
+        if (!GameRuning) return;
+        GameRuning = false;
         switch (multiolechoice[currentQuestionIndex].rightAns) 
         {
             case 0:
@@ -217,6 +222,9 @@ public class MultipleChoiceQuiz : MonoBehaviour
         {
             FindAnyObjectByType<SMScript>().playtrack("right");
             accumelatedScore++;
+            if (!exerciseMode) 
+            {
+                // record the score if it is not exercise mode
             switch (CC.difflvl)
             {
                 case 0:
@@ -229,34 +237,42 @@ public class MultipleChoiceQuiz : MonoBehaviour
                     um.activeUser.score.hardRight++;
                     break;
             }
+            }
+        
         }
         else
         {
             FindAnyObjectByType<SMScript>().playtrack("wrong");
-            switch (CC.difflvl)
+            // record the wrong if it is not exercise mode
+            if (!exerciseMode) 
             {
-                case 0:
-                    um.activeUser.score.easyWrong++;
-                    break;
-                case 1:
-                    um.activeUser.score.mediumWrong++;
-                    break;
-                case 2:
-                    um.activeUser.score.hardWrong++;
-                    break;
+                switch (CC.difflvl)
+                {
+                    case 0:
+                        um.activeUser.score.easyWrong++;
+                        break;
+                    case 1:
+                        um.activeUser.score.mediumWrong++;
+                        break;
+                    case 2:
+                        um.activeUser.score.hardWrong++;
+                        break;
+                }
+                switch (multiolechoice[currentQuestionIndex].topic)
+                {
+                    case 0:
+                        um.activeUser.score.phrasesWrong++;
+                        break;
+                    case 1:
+                        um.activeUser.score.PluralWrong++;
+                        break;
+                    case 2:
+                        um.activeUser.score.idiomWrong++;
+                        break;
+                }
+            
             }
-            switch (multiolechoice[currentQuestionIndex].topic)
-            {
-                case 0:
-                    um.activeUser.score.phrasesWrong++;
-                    break;
-                case 1:
-                    um.activeUser.score.PluralWrong++;
-                    break;
-                case 2:
-                    um.activeUser.score.idiomWrong++;
-                    break;
-            }
+            
         }
         NextTab.SetActive(true);
     }
@@ -277,7 +293,7 @@ public class MultipleChoiceQuiz : MonoBehaviour
 
         return array;
     }
-    private void OnDisable()
+    public void closing()
     {
         gameEnd();
         closeQuiz();
