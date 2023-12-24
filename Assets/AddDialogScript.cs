@@ -48,7 +48,7 @@ public class AddDialogScript : MonoBehaviour
     }
     private void OnDisable()
     {
-        
+        clear();
         submit.gameObject.SetActive(false);
         agree.gameObject.SetActive(true);
         scrollrec.verticalNormalizedPosition = 1f;

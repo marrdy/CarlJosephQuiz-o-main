@@ -139,6 +139,7 @@ public class UserManager : MonoBehaviour
 
         // Add the new UserInfo to the array
         Array.Resize(ref listofUsers, listofUsers.Length + 1);
+        newUser.score = new userScore();
         listofUsers[^1] = newUser;
         GameObject addbutton = Instantiate(UBS.gameObject);
         UserButtonScript ubs = addbutton.GetComponent<UserButtonScript>();
@@ -155,7 +156,6 @@ public class UserManager : MonoBehaviour
         addbutton.transform.localScale = new Vector3(1, 1, 1);
         ubs.GetComponent<Button>().onClick.AddListener(delegate { SelectUser(newUser); });
         ubs.DeleteButton.GetComponent<Button>().onClick.AddListener(delegate { RemoveUserInfo(newUser.username, addbutton); });
-        AddDialog.clear();
         AddDialog.gameObject.SetActive(false);
         message.Message.text = "New user created...";
         msg = Instantiate(message.gameObject);
