@@ -374,9 +374,9 @@ MonoBehaviour:
         idiomWrong: 0
       excerciseDone: 0
   author:
-    username: haha
+    username: hello
     teacher: 1
-    teacherPassword: lol
+    teacherPassword: sad
     score:
       easyRight: 0
       mediumRight: 0
@@ -396,11 +396,11 @@ MonoBehaviour:
   d: {fileID: 1092656909490495226}
   YesNoDialog: {fileID: 3364322340480877063, guid: fa2325deca63b3c4c969f8f6462815fc,
     type: 3}
-  difficulty: 0
+  difficulty: 2
   rightchoice: {fileID: 1092656910927414744}
   topic: {fileID: 7784503370112114041}
   qm: {fileID: 0}
-  index: 0
+  index: 1
   textdiff: {fileID: 8111166963973842214}
   msg: {fileID: 5352966895802105497, guid: f2df6ff964b4bac4db618832e59d0b61, type: 3}
 --- !u!1 &974946981128890747
@@ -5726,7 +5726,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Hard
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c64d66155a21a9740ad972586a4586b1, type: 2}
   m_sharedMaterial: {fileID: 240830646326108962, guid: c64d66155a21a9740ad972586a4586b1,

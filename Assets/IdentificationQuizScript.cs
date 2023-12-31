@@ -20,6 +20,8 @@ public class IdentificationQuizScript : MonoBehaviour
     public TMP_Text totalQuizes;
     public TMP_Text authorName;
     public TMP_Text gotScore;
+    public TMP_Text DifficultyDisplay;
+    
     public GameObject NextTab;
     public GameObject identificationPanel;
     public GameObject gameoverPanel;
@@ -61,6 +63,29 @@ public class IdentificationQuizScript : MonoBehaviour
 
     public void startGame() 
     {
+        if (!exerciseMode) 
+        {
+            switch (CC.difflvl)
+            {
+                case 0:
+                    DifficultyDisplay.text = "Easy";
+                    break;
+                case 1:
+                    DifficultyDisplay.text = "Medium";
+                    break;
+                case 2:
+                    DifficultyDisplay.text = "Hard";
+                    break;
+
+            }
+
+        }
+        else 
+        {
+            DifficultyDisplay.text = "Exercise Mode";
+        }
+       
+       
         identifications = CC.id;
        // GameObject msg;
         if (CC.gamemode == 0)

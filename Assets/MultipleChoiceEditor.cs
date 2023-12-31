@@ -26,12 +26,13 @@ public class MultipleChoiceEditor : MonoBehaviour
         MultipleChoice[] easy = qm.SetOfQuiz.MultipleChoices.easy;
         for (int i = 0; i < easy.Length; i++)
         {
-            int currentIndex = i;
+            
             if (easy[i].author.username == um.activeUser.username)
             {
                 MCEB.setValue(easy[i], 0);
                 MCEB.index = i;
                 MCEB.qm = qm;
+                MCEB.difficulty = 0;
                 GameObject ies = Instantiate(MCEB.gameObject);
                 ies.transform.SetParent(transform);
                 ies.transform.localScale = new Vector3(1, 1, 1);
@@ -42,12 +43,13 @@ public class MultipleChoiceEditor : MonoBehaviour
         MultipleChoice[] medium = qm.SetOfQuiz.MultipleChoices.medium;
         for (int i = 0; i < medium.Length; i++)
         {
-            int currentIndex = i;
+            
             if (medium[i].author.username == um.activeUser.username)
             {
                 MCEB.setValue(medium[i], 1);
                 MCEB.index = i;
                 MCEB.qm = qm;
+                MCEB.difficulty = 1;
                 GameObject ies = Instantiate(MCEB.gameObject);
 
                 ies.transform.SetParent(transform);
@@ -59,17 +61,16 @@ public class MultipleChoiceEditor : MonoBehaviour
         MultipleChoice[] hard = qm.SetOfQuiz.MultipleChoices.hard;
         for (int i = 0; i < hard.Length; i++)
         {
-            int currentIndex = i;
+            
             if (hard[i].author.username == um.activeUser.username)
             {
                 MCEB.setValue(hard[i], 2);
                 MCEB.index = i;
                 MCEB.qm = qm;
+                MCEB.difficulty = 2;
                 GameObject ies = Instantiate(MCEB.gameObject);
                 ies.transform.SetParent(transform);
                 ies.transform.localScale = new Vector3(1, 1, 1);
-
-
             }
 
         }

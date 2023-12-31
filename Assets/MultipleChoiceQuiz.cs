@@ -23,6 +23,7 @@ public class MultipleChoiceQuiz : MonoBehaviour
     public TMP_Text totalQuizes;
     public TMP_Text authorName;
     public TMP_Text gotScore;
+    public TMP_Text DifficultyDisplay;
     public GameObject NextTab;
     public GameObject mcPannel;
     public GameObject gameoverPanel;
@@ -65,6 +66,28 @@ public class MultipleChoiceQuiz : MonoBehaviour
 
     public void startGame()
     {
+        if (!exerciseMode)
+        {
+            switch (CC.difflvl)
+            {
+                case 0:
+                    DifficultyDisplay.text = "Easy";
+                    break;
+                case 1:
+                    DifficultyDisplay.text = "Medium";
+                    break;
+                case 2:
+                    DifficultyDisplay.text = "Hard";
+                    break;
+
+            }
+
+        }
+        else
+        {
+            DifficultyDisplay.text = "Exercise Mode";
+        }
+
         multiolechoice = CC.mc;
       //  GameObject msg;
         if (CC.gamemode == 1)
@@ -298,4 +321,5 @@ public class MultipleChoiceQuiz : MonoBehaviour
         gameEnd();
         closeQuiz();
     }
+   
 }
