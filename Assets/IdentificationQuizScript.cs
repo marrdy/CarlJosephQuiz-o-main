@@ -113,6 +113,7 @@ public class IdentificationQuizScript : MonoBehaviour
         if(currentQuestionIndex >= identifications.Length) 
         {
             FindAnyObjectByType<SMScript>().playtrack("win");
+            NextTab.SetActive(false);
             gameEnd();
             return;
         }

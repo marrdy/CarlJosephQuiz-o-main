@@ -34,6 +34,7 @@ public class MultipleChoiceEditBox : MonoBehaviour
         explain.text = setmc.Explanation;
         author = setmc.author;
         rightchoice.value = setmc.rightAns;
+        difficulty = diff;
         switch (diff)
         {
             case 0:
